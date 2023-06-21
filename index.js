@@ -27,10 +27,10 @@ function toggleSidebar() {
     
         if (nomeJogador != null) {
             if (nomeJogador == "" || nomeJogador == null ) {
-                alert('Nomes vazios não são aceitos! Digite um nome válido!');
+                alert('Voce nao digitou nada favor digite um nome válido!');
                 return;
-            } else if (nomeJogador.length > 30) {
-                alert('O nome do jogador é longo demais!');
+            } else if (nomeJogador.length > 15) {
+                alert('O nome esta grande demais!');
                 return;
             } else {
                 var divCartela = document.getElementById('divCartela');
@@ -123,16 +123,7 @@ function toggleSidebar() {
         }
         return numerosSorteados;
     }
-    
-    function jogoIniciado() {
-        var avisoJogoIniciado = document.getElementById('avisoJogoIniciado');
-        avisoJogoIniciado = document.createElement('h3');
-        avisoJogoIniciado.id = 'avisoJogoIniciado';
-        var section = document.querySelector("#interface2");
-        section.appendChild(avisoJogoIniciado);
-        avisoJogoIniciado.innerText = 'O jogo já foi realizado! Para realizar outro jogo, clique em "reiniciar jogo"!'
-    }
-    
+
     function jogar() {
         vetor = sortearNumeros();
         console.log(vetor);
@@ -150,9 +141,8 @@ function toggleSidebar() {
             numeroSorteadoH1.innerText = vetor[j];
     
             //colocar verificador com as cartelas, para assim marcar os números até que alguma cartela ganhe.
+            
         }
         document.querySelector("#jogar").onclick = function() {jogoIniciado()};
     }
-    
-    
     

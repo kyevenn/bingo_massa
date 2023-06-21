@@ -3,7 +3,9 @@
         padding: 0;
         box-sizing: border-box;}
 
-body {
+body { 
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/171/955/597/tv-show-ben-10-ben-tennyson-wallpaper-preview.jpg);
+    background-size: cover;
     background-color: burlywood;
   }
   header {
@@ -21,10 +23,10 @@ main {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    width: 100vw;
+    width: 97vw;
     height: auto;
     flex-direction: row;
-    margin-top: 200px;}
+    margin-top: 50px;}
 
   .sidebar {
     position: fixed;
@@ -138,7 +140,7 @@ table {
     }
     
     #divCartela {
-        width: 50%;
+        width: 40%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -151,16 +153,19 @@ table {
     }
     
     #divSorteio {
-        width: 60px;
-        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
         border: 2px solid black;
-        background-color: rgb(136, 235, 144);
+        background-color: rgb(12, 199, 27);
         margin: 2px;
     }
     
     #sorteados {
-        width: 80%;
+        width: 20vw;
         height: auto;
         display: flex;
         align-items: center;
